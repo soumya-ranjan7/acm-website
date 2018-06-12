@@ -1,0 +1,128 @@
+#techprojects{
+  background-image: url('../img/backwhite.svg');
+  /*background-size: cover;*/
+  /*background-color: #fff;*/
+}
+
+nav{
+	background-color: white;
+
+}
+nav ul a{
+	color: #424242;
+}
+nav .brand-logo{
+	color: #424242;
+}
+@media only screen and (max-width: 992px)
+{
+	nav .brand-logo {
+    	left: 10%;
+   		 -webkit-transform: translateX(-50%);
+    	transform: translateX(-50%);
+    }
+}
+nav .button-collapse {
+    float: right;
+  }
+
+nav a{
+	color: #424242;
+}
+
+@media only screen and (max-width: 992px)
+{
+	nav .brand-logo {
+    left: 30%;
+	}
+}
+/*#techprojects{
+	background-color: #f2f2f2;
+}*/
+
+.viewproject{
+	font-size: 17px;
+	color: #4285f4;
+}
+
+.card .card-action {
+    border-top: initial;
+  }
+  .imageshowincard{
+  	  background: #e0e0e0; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(left, #e0e0e0,white); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(right,#e0e0e0,white ); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(right,#e0e0e0,white ); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(to right, #e0e0e0,white ); /* Standard syntax */
+/*	  width: 197px;
+	  margin-left: 0px;*/
+     margin-left: 0px;
+    margin-right: 0px;
+    height: 117px;
+  }
+
+  .container .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* for footer section */
+/*#footer-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer-li {
+    float: left;
+}
+
+.footer-li a {
+    display: block;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footer-li a:hover {
+    color: #fff;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #039be5;
+ }*/
+
+.footer-wrapper{
+  background: #212121;
+  text-align: center;
+  color: #fff;
+}
+.footer-wrapper .row{
+  margin-bottom: 0;
+}
+.footer-vit, .footer-acm{
+  width: 280px;
+}
+.footer-vit{
+  position: relative;
+  bottom: 30px;
+}
+
+
+/*.github_red{
+  color: black;
+}
+.fb_blue{
+  color: black;
+  transition: all .2s ease-in-out;
+}
+.github_red:hover{
+  color: red;
+  transform: scale(100,100);
+}
+.fb_blue:hover{
+  color: blue;
+  transform: scale(1.1);
+}
+*/

@@ -1,0 +1,203 @@
+/*
+Rules:- 
+	Global colors used :-   color: #1e88e5
+
+	Design is mobile first, so first design is for mobile and then
+	media query is written for large screens
+	wwr - who we are section
+	op- our projects section
+*/
+
+
+*{
+	box-sizing: border-box;
+	/*overflow-x: hidden;*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+
+}
+#sidenav-overlay {
+    display: none !important;
+}
+#bg-wrapper{
+	background-image: url('../img/background.png');
+	background-position: 0 -120px;
+	min-height: 100vh;
+	position: relative;
+}
+.home-arrow-down{
+	position: absolute;
+	bottom: 10px;
+	left: 49%;
+}
+.home-arrow-down .fas{
+	color: #fff;
+	cursor: pointer;
+}
+.heading{
+	color: #1e88e5;
+	font-weight: bold;
+	text-align: center;
+}
+.heading h4{
+	font-weight: bold;
+	line-height: 1.2;
+}
+nav{
+	background-color: transparent;
+	position: fixed;
+	z-index: 99;
+	box-shadow: none;
+	transition: all 0.2s ease;
+}
+
+.brand-logo img {
+	width: auto;
+	max-height: 56px;
+	position: relative;
+	left: 20px;
+}
+
+/*about us*/
+#aboutus{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('../img/backwhite.svg');
+}
+.aboutus-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.make-card{
+	padding: 12px;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 2;
+	background: #fff;
+	letter-spacing: 0.2px;
+	color: #424242;
+
+}
+@media screen only and (min-width: 600px) {
+	.make-card{
+		width: 85%;
+	}
+	
+}
+/* who we are(wwr) */
+#wwr{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('../img/backwhite.svg');
+	letter-spacing: 0.2px;
+	color: #424242;
+	font-size: 15px;
+}
+#wwr .make-card{
+	margin-left: inherit;
+	width: 85%;
+	text-align: justify;
+}
+@media only screen and (min-width: 700px) {
+	#wwr .make-card{
+		/*height: 490px;*/
+		display: flex;
+		align-items: center;
+	}
+	.vitgate{
+		width: 80% !important;
+		margin: auto;
+	}
+}
+@media only screen and (min-width: 670px and max-width: 1270px){
+	#wwr .make-card{
+		min-height: 490px;
+	}
+}
+@media only screen and (min-width: 1275px){
+	#wwr .make-card{
+		/*height: 490px;*/
+		height: auto;
+	}
+}
+@media only screen and (max-width: 600px) {
+	#wwr .make-card{
+		margin-left: auto;
+		width: 100%;
+	}
+	.idealogy-img {
+		/*width: 300px;*/
+		text-align: center;
+	}
+}
+.idealogy-flex{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.idealogy-wrapper .row{
+	margin-bottom: 0;
+}
+.idealogy-text{
+	padding-left: 20px;
+}
+.idealogy-text h6{
+	font-weight: bold;
+}
+.idealogy-img img{
+	width: 100px;
+}
+@media only screen and (min-width: 700px) {
+	.idealogy-flex{
+		flex-wrap: nowrap;
+	}
+	.idealogy-img img{
+		width: 300px;
+	}
+}
+
+/* our projects */
+#op{
+	background-color: #212121;
+	color: #fff;
+	padding-bottom: 100px;
+	
+}
+.op-content{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.op-content .heading{
+	color: #fff;
+}
+
+#op .slick-dots li {
+	background-color: black;
+	border-radius: 50%;
+}
+
+#op .slick-dots .slick-active {
+	background-color: white;
+}
+.op-img-box{
+	background: #312f2f;
+	width: 80%;
+	margin: auto !important;
+}
+.op-img-text{
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	text-align: center;
+}
+.your-class a{
+	color: #fff;
+}
+.slick-arrow {
+	display: none !important;
+}

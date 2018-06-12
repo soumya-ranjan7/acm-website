@@ -1,0 +1,307 @@
+/*after common1 and slick part that is inside slick the content inside it 
+	Global colors used :-   color: #1e88e5
+*/
+
+/*our projects style continue.. */
+.op-content-wrapper {
+	text-align: center;
+	text-align: -moz-center;
+}
+.see-all-link{
+	font-size: 1.1rem;
+    background:  #1e88e5 ;
+    color: #fff;
+}
+.see-all-link:hover{
+    background:  #1e88e5 ;
+}
+.see-all-link:visited{
+    background:  #1e88e5 ;
+}
+.see-all-link a{
+	color: #fff;
+}
+
+/* Our gallery style */
+#our-gallery{
+	min-height: 100vh;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('../img/backwhite.svg');
+}
+.gal-flex-container{
+	display: flex;
+	justify-content: space-around;
+}
+/* gallery styles ends here */
+
+/*  Our boards style */
+#our-board{
+	min-height: 100vh;
+	background-color: #212121;
+}
+.our-board-content{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.our-board-content .heading{
+	color: #fff;
+}
+/* Our events style */
+#our-events{
+	min-height: 100vh;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('../img/backwhite.svg');
+}
+.event-pos{
+    position: relative;
+}
+.event-vm{
+    padding: 8px;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    background: transparent;
+    border: 1px solid white;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+.event-vm:hover{
+    box-shadow: 2px 2px 2px 2px blue;
+}
+@media only screen and (max-width: 700px) {
+    .event-vm{
+        border: none;
+        text-decoration: underline;
+        bottom: -30px;
+    }
+}
+
+/*our boards style*/
+
+@media only screen and (min-width: 700px) {
+    .ob-card-center {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .ob-card-left {
+        margin-left: auto !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .ob-card {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+.card{
+    transition: all 0.3s .1s;
+}
+
+.our-board-flex-container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.our-board-flex-container .card-image img{
+	border-radius: 50%;
+	width: 70%
+	margin: auto;
+	width: 200px;
+	/*width: 180px;*/
+}
+.our-board-flex-container .card-image{
+	padding: 10px 25px 0 25px;
+}
+.our-board-flex-container .card-content{
+	text-align: -moz-center;
+	text-align: center;
+	padding-bottom: 0;
+}
+.our-board-flex-container .fa-2x{
+	font-size: 1.5rem !important;
+}
+.board-fb ,.board-git, .board-linke{
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+.board-git:hover{
+    color: #ee6e73;
+}
+.board-fb:hover {
+     color: #3b5999; 
+}
+.board-linke:hover{
+    color: #3b5999; 
+}
+
+.board-section-mobile .card-image img{
+	border-radius: 50%;
+	/*width: 70%*/
+	margin: auto;
+	width: 200px;
+	/*width: 180px;*/
+}
+.board-section-mobile .card-image{
+	padding: 10px 25px 0 25px;
+}
+.board-section-mobile .card-content{
+	text-align: -moz-center;
+	text-align: center;
+	padding-bottom: 0;
+}
+
+.board-section-mobile .fa-2x{
+	font-size: 1.5rem !important;
+}
+.card .card-reveal{
+    background: #312f2f;
+    color: #fff !important;
+}
+
+/*Board section style ends*/
+
+/*Our contact style starts*/
+#contact-us{
+	min-height: 100vh;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('../img/backwhite.svg');
+}
+
+/* code copied from previous one */
+.cu-head {
+    text-align: center;
+    color: #1e88e5;
+}
+.cu-head h3 {
+    font-weight: bolder;
+    margin-bottom: 0 !important;
+}
+.cu-main {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+@media only screen and (min-width: 701px) {
+    /*For desktops*/
+    .cu-main-img {
+        width: 60%;
+    }
+    #cu-form-wrapper {
+        height: 338px;
+        position: relative;
+    }
+    .cu-horizontal-form {
+        background-color: #212121;
+        width: 33vw;
+        position: absolute;
+        height: 15.8rem;
+        bottom: 1.2rem;
+        padding: 1em 1em 1em 1em;
+    }
+    .blue-section {
+        background: #1e88e5;
+        padding: 0.4rem;
+        margin-bottom: 5px;
+        background: linear-gradient(#0d47a1, #1e88e5);
+    }
+    .blue-section p {
+        color: white;
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+    .cu-vertical-form {
+        position: absolute;
+        width: 24vw;
+        margin-left: 1.5rem;
+        background-color: white;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .cu-main-img {
+        width: 200px;
+    }
+    #cu-form-wrapper {
+        width: 90%;
+        margin-left: auto;
+    }
+    .cu-horizontal-form {
+        background-color: #212121;
+        width: 68vw !important;
+        position: absolute;
+        height: 15.8rem;
+        bottom: 1.2rem;
+        padding: 1em 1em 1em 1em;
+    }
+    .cu-vertical-form {
+        position: absolute;
+        width: 56vw !important;
+        margin-left: 1.5rem;
+        background-color: white;
+    }
+}
+#cu-form {
+    padding-left: 8px;
+}
+#cu-form-wrapper .fa {
+    color: white;
+}
+@media screen and (min-width: 502px)
+{
+    #sub-btn{
+        transform: translate(10px, 190px);
+    }
+}
+#sub-btn {
+    float: right;
+    right: 1rem;
+    background: #1e88e5;
+    background: linear-gradient(#0d47a1, #1e88e5);
+}
+@media screen and (max-width: 500px)
+{
+    #sub-btn{
+        transform: translate(40px, 190px);
+    }
+}
+#message {
+    padding: 0;
+}
+/******try ***********/
+#cu-form-wrapper {
+    height: 338px;
+    position: relative;
+}
+.cu-horizontal-form {
+    background-color: #212121;
+    width: 33vw;
+    position: absolute;
+    height: 15.8rem;
+    bottom: 1.2rem;
+    padding: 1em 1em 1em 1em;
+}
+.blue-section {
+    background: #1e88e5;
+    padding: 0.4rem;
+    margin-bottom: 5px;
+    background: linear-gradient(#0d47a1, #1e88e5);
+}
+.blue-section p {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+.cu-vertical-form {
+    position: absolute;
+    width: 24vw;
+    margin-left: 1.5rem;
+    background-color: white;
+}

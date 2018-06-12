@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ACM VIT student chapter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="css/common1.css">
+	<link rel="stylesheet" href="css/common2.css">
+	<link rel="stylesheet" href="css/common3.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="css/events.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="common.css"> -->
+	<link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+	<link rel="icon" type="image/png" href="img/favicon.ico" sizes="128x128" />
+	<link rel="icon" href="img/favicon.ico" />
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<style>
+	.slick-dots li{
+		height: 10px;
+		width: 10px;
+	}
+	.op-img-box{
+		margin-right: 20px;
+	}
+	.op-content-wrapper h5{
+		padding-left: 0;
+	}
+	.card-reveal{
+		color: #fff !important;
+	}
+	@media only screen and (min-width: 700px){
+		#idea-2-img{
+			width: 420px;
+		}
+	}
+</style>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_REiMa1cVR9luJ1IUjeJgN");
+   })();
+</script>
+</head>
+<body>
+	<div id="whole-website">
+		<!-- This div contains whole website -->
+
+		<section id="bg-wrapper">
+			<!-- above id is for adding background image -->
+			
+			<nav>
+				<div class="nav-wrapper">
+					<a href="http://acmvit.in" class="brand-logo" target="_blank"><img src="img/acm-nav.png" alt="ACM" class="responsive-img"></a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-about" onclick="$('html, body').animate({scrollTop: $('#aboutus').offset().top-60}, 1000);">About</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-event" onclick="$('html, body').animate({scrollTop: $('#our-events').offset().top-60}, 1000);">Events</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-about" onclick="$('html, body').animate({scrollTop: $('#op').offset().top-60}, 1000);">Projects</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-gal" onclick="$('html, body').animate({scrollTop: $('#our-gallery').offset().top-60}, 1000);">Gallery</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-team" onclick="$('html, body').animate({scrollTop: $('#our-board').offset().top-60}, 1000);">Team</a>
+						</li>
+						
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-contact" onclick="$('html, body').animate({scrollTop: $('#contact-us').offset().top-60}, 1000);">Contact Us</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-contact" href="http://blog.acmvit.in" target="_blank">Blog</a>
+						</li>
+						
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-about" onclick="$('html, body').animate({scrollTop: $('#aboutus').offset().top-60}, 1000);">About</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-event" onclick="$('html, body').animate({scrollTop: $('#our-events').offset().top-60}, 1000);">Events</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-about" onclick="$('html, body').animate({scrollTop: $('#op').offset().top-60}, 1000);">Projects</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-gal" onclick="$('html, body').animate({scrollTop: $('#our-gallery').offset().top-60}, 1000);">Gallery</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-team" onclick="$('html, body').animate({scrollTop: $('#our-board').offset().top-60}, 1000);">Team</a>
+						</li>
+						
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-contact" onclick="$('html, body').animate({scrollTop: $('#contact-us').offset().top-60}, 1000);">Contact Us</a>
+						</li>
+						<li class="hvr-grow hvr-underline-reveal">
+							<a class="navlink a-contact" href="http://blog.acmvit.in" target="_blank">Blog</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- for css of this part , look over common3.css file -->
+			<div class="landing-page-content">
+				<div class="typ-div">
+					<span><b>_______</b></span><p id="typewrl"></p>
+				</div>
+				<span class="home-arrow-down">
+					<a onclick="$('html, body').animate({scrollTop: $('#aboutus').offset().top-60}, 1000);">
+						<span class="fas fa-3x fa-chevron-down"></span>
+					</a>
+				</span>
+			</div>
+		</section>
+
+
+		<section id="aboutus">
+			<br>
+			<div class="heading">
+				<h4 class="hvr-underline-from-center">ABOUT VIT</h4>
+			</div>
+			<div class="row aboutus-row">
+				<div class="col s12 m6">
+					<div id="vit-gate" class="center">
+						<img src="img/vitgate.png" alt="About us" class="responsive-img vitgate">
+					</div>
+				</div>
+				<div class="col s12 m6">
+					<div class="make-card z-depth-2">
+						<p>Vellore Institute of Technology, Vellore is one of the most revered and distinguished engineering institution which holds the rare distinction of being one of the few colleges to impart world-class education along with encouragement towards co-curricular activities which help in overall development and transform students into responsible adults with a strong ethical core. <br>
+						Vellore Institute of Technology was the birth-child of the tireless and relentless perseverance of our respected Chancellor, Dr. G. Viswanathan, whose objective since the very inception of this institution has been to provide an environment that would help foster intellectual aptitude, enhance human perception and create a society of extra-ordinary professionals capable of thinking new, out-of-the-box ideas and having the skills to implement them, in order to help the entire society as a whole.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Who we are -->
+		<section id="wwr">
+			<br>
+			<div class="heading">
+				<h4 class="hvr-underline-from-center">WHO WE ARE</h4>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col s12 m6">
+					<div id="about-us">
+						<h4>About Us</h4>
+						<div class="make-card z-depth-2">
+							<br>
+							ACM-VIT, one of the most reputed and distinguished technical chapter in VIT, Vellore has been working with vision and determination since it’s inception in 2009, with the aspirations of advancement of computer science as a science and a profession. We are not just an organization, we are a family, united by one cause, working towards making technology more accessible much like our parent organization, ACM. <br>
+							ACM-VIT has been working on projects related to graphic designing, web development, machine learning and app development and has been organizing events and workshop for the same. Apart from this, ACM-VIT also boasts of its own research wing, the only chapter in VIT to have that. <br><br>
+							ACM-VIT has been the creator of websites that have garnered applaud and awe, like “Pravega-Racing”, “Code-2-create” and many more. ACM-VIT has also made websites with the aim of using technology to make life simpler like “All About VIT” and “VIT Cabshare”. ACM-VIT continues to pursue projects with diligence and ambition.
+							Technology is their cause, objective, vision and mission. Ask why? Look at their motto, “Because Technology Matters”.
+
+							<br>
+						</div>	
+					</div>
+				</div>
+				<div class="col s12 m6">
+					<div id="our-idealogy">
+						<h4>Our Idealogy</h4>
+						<div class="make-card z-depth-2">
+							<div class="idealogy-wrapper">
+								<div class="idealogy-flex row">
+									<div class="idealogy-img col m3 s12">
+										<img src="img/idea-1.png" alt="Idea" class="responsive-img">
+									</div>
+									<div class="idealogy-text col m9 s12">
+										<h6>Sharing Knowledge</h6>
+										Deriving inspiration from our parent organization, ACM, our primary goal is to impart knowledge and promote innovation in the field of computer science and we aim to achieve the same by providing numerous platforms to students to learn, build and enhance their skills.
+ 
+									
+									</div>
+								</div>
+								<div class="idealogy-flex row">
+									<div class="idealogy-img m3 s12">
+										<img src="img/idea-2.png" alt="Idea" class="responsive-img" id="idea-2-img">
+									</div>
+									<div class="idealogy-text m9 s12">
+										<h6>Overall Development</h6> 
+
+										We believe in practical learning and aim for all round development of a student in terms of lifelong learning, career development and professional networking along with technical skills
+
+
+									</div>
+								</div>
+								<div class="idealogy-flex row">
+									<div class="idealogy-img col m3 s12">
+										<img src="img/idea-3.png"  alt="Idea" class="responsive-img">
+									</div>
+									<div class="idealogy-text col m9 s12">
+										<h6>Inclusion</h6>
+										We are of the thought that the society is the strongest when it works together and thus believe in the upliftment of women and the LGBT community and their inclusion in technology and related fields. Our new ACM-W wing is a step in the same direction.
+										
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+		</section>
+		<!-- Who we are  section ends -->
+		<!-- Our events section starts-->
+		<section id="our-events">
+			<br>
+			<div class="our-gallery-content">
+				<div class="heading">
+					<h4 class="hvr-underline-from-center">OUR EVENTS</h4>
+				</div>
+				
+				<section class="cd-horizontal-timeline">
+					<div class="timeline wow fadeInDown">
+						<div class="events-wrapper">
+							<div class="events">
+								<ul>
+									<li><a href="#0" data-date="16/01/2014" class="selected"><b> 27/04/2017</b><br /><span class="eventName">SEMINAR</span></a></li>
+									<li><a href="#0" data-date="28/02/2014"><b> 13/04/2017</b><br /><span class="eventName">HACKATHON</span></a></li>
+									<li><a href="#0" data-date="20/04/2014"><b>15/02/2017</b><br /><span class="eventName">CODING</span></a></li>
+									<li><a href="#0" data-date="20/05/2014"><b>08/02/2017</b><br /><span class="eventName">SEMINAR</span></a></li>
+									<li><a href="#0" data-date="09/07/2014"><b>15/10/2016</b><br /><span class="eventName">WORKSHOP</span></a></li>
+									<li><a href="#0" data-date="30/08/2014"> <b> 23/09/2016 </b><br /><span class="eventName">CODING</span></a></li>
+									<li><a href="#0" data-date="15/09/2014"><b>18/09/2016</b><br /><span class="eventName">WORKSHOP</span></a></li>
+									<li><a href="#0" data-date="01/11/2014"><b>11/07/2016</b><br /><span class="eventName">CODING</span></a></li>
+									<li><a href="#0" data-date="10/12/2014"><b>28 Feb 2017</b><br /><span class="eventName">CODING</span></a></li>
+									<!-- <li><a href="#0" data-date="19/01/2015"><b>28 Feb 2017</b><br /><span class="eventName">Workshop</span></a></li>
+									<li><a href="#0" data-date="03/03/2015"><b>28 Feb 2017</b><br /><span class="eventName">Workshop</span></a></li> -->
+								</ul>
+
+								<span class="filling-line" aria-hidden="true"></span>
+							</div> <!-- .events -->
+						</div> <!-- .events-wrapper -->
+
+						<ul class="cd-timeline-navigation">
+							<li><a style="font-size: 19px; padding-left: 9px;" href="#0" class="prev inactive"><b>></b></a></li>
+							<li><a style="font-size: 19px; padding-left: 9px;" href="#0" class="next"><b>></b></a></li>
+						</ul> <!-- .cd-timeline-navigation -->
+					</div> <!-- .timeline -->
+
+					<div class="total-events-content wow fadeInUp" style="height: auto !important;">
+
+						<div class=" events-arrows-left transit-prev hide-on-small-only">
+							<h4><a href="#0" id="arrow-prev" class="prev transit  style-arrow-box inactive"><b><i class="fa fa-angle-left" aria-hidden="true"></i></b></a></h4>
+						</div>
+
+
+						<div style="margin-bottom: 0;" class="events-content">
+							<ul>
+								<li class="selected" data-date="16/01/2014">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Introduction to Machine Learning
+										</b></h4>
+										<h5 class="event-subheading">A very informative session on machine learning</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/ai.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												<p class="event-para"> 
+													Various topics that dealt with machine learning were discussed during the session which was conducted by Shivam Chawla, one of the members of ACM. 
+												</p>
+											</div>
+											<a href="events/ai.html" target="_blank" class="event-vm hvr-grow-shadow">VIEW MORE</a>
+										</div>
+									</div>
+								</li>
+
+								<li data-date="28/02/2014">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Code 2 Create
+										</b></h4>
+										<h5 class="event-subheading">A 36-hour, nationwide hackathon.</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/logowhite.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">												
+												<p class="event-para"> 
+													It was a 36 hour hack-a-thon, based on six tracks, healthcare, AR/VR, Clean and green energy, education, space and smartcities.	 
+												</p>
+											</div>
+											<a href="events/c2c.html" target="_blank"  class="event-vm hvr-grow-shadow">VIEW MORE</a>
+										</div>
+									</div>
+									
+								</li>
+
+								<li data-date="20/04/2014">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Python and GAE
+										</b></h4>
+										<h5 class="event-subheading">A patent workshop on Python and GAE.</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/ev-gae1.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													Python and GAE was a workshop oriented towards imparting basics of python. It also aimed at acquainting students with the basics of Google App Engine.
+												</p>
+											</div>
+											<a href="events/gae.html"  target="_blank" class="event-vm hvr-grow-shadow">VIEW MORE</a>
+										</div>
+									</div>
+								</li>
+
+								<li data-date="20/05/2014">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>GIT and GITHUB
+										</b></h4>
+										<h5 class="event-subheading">A seminar on Version Control Systems.</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/ev-git1.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													The session on GIT and GITHUB was conducted with an objective to educate the developers about the essentials of Git and GitHub. 
+												</p>
+											</div>
+											<a href="events/git.html"  target="_blank" class="event-vm hvr-grow-shadow">VIEW MORE</a>
+										</div>
+									</div>
+								</li>
+
+								<li data-date="09/07/2014">
+
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Material design
+										</b></h4>
+										<h5 class="event-subheading">A constructive session on Material Design.</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/md.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													The seminar on Material design was aimed at imparting knowledge of materialize so that even a rookie could walk out with plentiful knowledge on material design. 
+												</p>
+											</div>
+											<a href="events/materiald.html"  target="_blank" class="event-vm hvr-grow-shadow">VIEW MORE</a>
+										</div>
+									</div>	
+
+
+								</li>
+
+								<li data-date="30/08/2014">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Hacktoberfest
+										</b></h4>
+										<h5 class="event-subheading">An event to honour the International Initiative.</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/hackfest.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													It was a mini-hack in the form of a pull request competition on GITHUB taking forward the ongoing hacktoberfest(Month long celebration of open source software). 
+												</p>
+											</div>
+											<a href="events/hacktoberfest.html"  target="_blank" class="event-vm hvr-grow-shadow">VIEW MORE</a>
+										</div>
+									</div>
+									
+								</li>
+
+								<li data-date="15/09/2014">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Docker
+										</b></h4>
+										<h5 class="event-subheading">Session on Docker and Containerization.</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/docker.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													The seminar on docker was held with an objective of introducing it to the students. 
+												</p>
+											</div>
+											<a href="events/docker.html" target="_blank"  class="event-vm hvr-grow-shadow" >VIEW MORE</a>
+										</div>
+									</div>
+									
+								</li>
+
+								<li data-date="01/11/2014">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Reverse Coding
+										</b></h4>
+										<h5 class="event-subheading">An online coding event with a twist.</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/img.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													Reverse Coding: It was dual-round online coding contest. Round one being a normal coding round and round two held a twist. The twist was that participants were given an output and they were supposed to write a code for it.
+												</p>
+											</div>
+											<a href="events/rc.html"  target="_blank" class="event-vm hvr-grow-shadow">VIEW MORE</a>
+										</div>
+									</div>
+									
+								</li>
+
+								<li data-date="10/12/2014">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Codart
+										</b></h4>
+										<h5 class="event-subheading">A coding event based on Accuracy.</h5>
+										<br/>
+										<div class="row event-pos">
+											<div class="col s12 m4">
+												<img src="img/codartlogo.png" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													It consisted of an online coding round coupled with an offline round which was an amalgamation of coding and the dart game. 
+												</p>
+											</div>
+											<a href="events/codart.html"  target="_blank" class="event-vm hvr-grow-shadow">VIEW MORE</a>
+										</div>
+									</div>
+								</li>
+
+								<!-- <li data-date="19/01/2015">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Introduction to Machine Learning
+										</b></h4>
+										<h5 class="event-subheading">A very informative session on machine learning</h5>
+										<br/>
+										<div class="row">
+											<div class="col s12 m4">
+												<img src="img/hack.jpg" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													Various topics that dealt with machine learning were discussed during the session which was conducted by Shivam Chawla, one of the members of ACM. 
+												</p>
+											</div>
+											<a href="ml.html" class="btn" style="float: right; background: transparent; border: 1px solid white; color: white; border-radius: 5px;">VIEW MORE</a>
+										</div>
+									</div>
+									
+								</li> -->
+
+								<!-- <li data-date="03/03/2015">
+									<div class="col s12 m4 event-div-cont z-depth-2">
+										<h4 class="event-heading"><b>Introduction to Machine Learning
+										</b></h4>
+										<h5 class="event-subheading">A very informative session on machine learning</h5>
+										<br/>
+										<div class="row">
+											<div class="col s12 m4">
+												<img src="img/hack.jpg" data-caption="Code2Create: Biggest Hack Ever" class="responsive-img materialboxed c2cImg event-img" alt="Code2Create">
+											</div>
+											<div class="col s12 m8">
+												
+												<p class="event-para"> 
+													Various topics that dealt with machine learning were discussed during the session which was conducted by Shivam Chawla, one of the members of ACM. 
+												</p>
+											</div>
+											<a href="ml.html" class="btn" style="float: right; background: transparent; border: 1px solid white; color: white; border-radius: 5px;">VIEW MORE</a>
+										</div>
+									</div>
+
+								</li> -->
+							</ul>
+						</div> <!-- .events-content -->
+
+						<div class="events-arrows-left transit-next hide-on-small-only">
+							<h4><a href="#0" id="arrow-next" class="next transit style-arrow-box"><b><i class="fa fa-angle-right" aria-hidden="true"></i></b></a></h4>
+						</div>
+					</div>
+					
+				</section>
+
+			</div>
+		</section>
+		<!-- Our events section ends here -->
+		<!-- our projects section starts -->
+		<section id="op">
+			<br>
+			<div class="op-content">
+				<div class="heading">
+					<h4 class="hvr-underline-from-center">OUR PROJECTS</h4>
+				</div>
+				<br><br><br>
+				<div class="your-class">
+					<a href="projects/c2cwebportal.html" target="_blank">
+						<div class="op-content-wrapper">
+							<div class="op-img-box card">
+								<!-- <img src="http://via.placeholder.com/500x400" class="responsive-img" alt="Reverse Coding"> -->
+								<img src="img/p-c2c.png" class="responsive-img" alt="Code2Create">
+
+							</div>
+							<h5 class="op-img-text">Code2Create App</h5>
+							<br>
+						</div>
+					</a>
+					<a href="projects/codart.html" target="_blank">
+						<div class="op-content-wrapper"> 
+							<div class="op-img-box card">
+								<!-- <img src="http://via.placeholder.com/500x400" class="responsive-img" alt="Reverse Coding"> -->
+								<img src="img/p-codart.png" class="responsive-img" alt="Codart">
+							</div>
+							<h5 class="op-img-text">Codart Web Portal</h5>
+							<br>
+						</div>
+					</a>
+					<a href="projects/pravega.html" target="_blank">
+						<div class="op-content-wrapper"> 
+							<div class="op-img-box card">
+								<!-- <img src="http://via.placeholder.com/500x400" class="responsive-img" alt="Reverse Coding"> -->
+								<img src="img/p-pravega.png" class="responsive-img" alt="Pravega">
+							</div>
+							<h5 class="op-img-text">Pravega Website</h5>
+							<br>
+						</div>
+					</a>
+					<a href="projects/rc.html" target="_blank">
+						<div class="op-content-wrapper"> 
+							<div class="op-img-box card">
+								<img src="img/p-rc.png" class="responsive-img" alt="Reverse Coding">
+							</div>
+							<h5 class="op-img-text">Reverse Coding Portal</h5>
+							<br>
+						</div>
+					</a>
+					<a href="projects/headscratcher.html" target="_blank">
+						<div class="op-content-wrapper"> 
+							<div class="op-img-box card" style="text-align: -webkit-center;">
+								<img src="img/p-bweb.jpg" class="responsive-img" alt="Head Scrather">
+							</div>
+							<h5 class="op-img-text">Head Scratcher App</h5>
+							<br>
+						</div>
+					</a>
+				</div>
+				<button class="right see-all-link btn waves-effect waves-light"><a href="projects/index.html" target="_blank">See all</a><i class="material-icons right">send</i> </button>
+			</div>
+
+		</section>
+		<!-- out projects section ends here -->
+
+
+		<!-- Our gallery section starts-->
+		<!-- check style of this section in common3.css -->
+		<section id="our-gallery">
+			<br>
+			<div class="our-gallery-content">
+				<div class="heading">
+					<h4 class="hvr-underline-from-center">GALLERY</h4>
+				</div>
+				<br><br>
+				
+				<div class="">
+					<!-- <div class="gal-img gal-flex-container">
+						<img src="http://via.placeholder.com/340x340" alt="Gallery Image">
+					</div> -->
+					<div class="grid">
+						<div class="grid-sizer"></div>
+						<div class="grid-item">
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" /> -->
+							<img src="img/gallery/gallery-1.jpg" alt="Gallery1" />
+						</div>
+						<div class="grid-item">
+							<!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" /> -->
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" /> -->
+							<img src="img/gallery/gallery-10.jpg" alt="Gallery2" />
+						</div>
+						<div class="grid-item">
+							<!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" /> -->
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" /> -->
+							<img src="img/gallery/gallery-7.jpg"  alt="Gallery3"  />
+						</div>
+						<div class="grid-item">
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" /> -->
+							<img src="img/gallery/gallery-11.jpg" alt="Gallery4"  />
+						</div>
+						<div class="grid-item">
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" /> -->
+							<img src="img/gallery/gallery-5.jpg" alt="Gallery5"  />
+						</div>
+						<div class="grid-item">
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" /> -->
+							<img src="img/gallery/gallery-15.jpg" alt="Gallery6"  />
+						</div>
+						<div class="grid-item">
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" /> -->
+							<img src="img/gallery/gallery-2.jpg" alt="Gallery7"  />
+						</div>
+						<div class="grid-item">
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" /> -->
+							<img src="img/gallery/gallery-8.jpg" alt="Gallery8"  />
+						</div>
+						<div class="grid-item">
+							<!-- <img class="materialboxed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" /> -->
+							<img src="img/gallery/gallery-6.jpg"  alt="Gallery9" />
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<br><br>
+		</section>
+		<!-- Our gallery section ends here -->
+
+
+		<!-- Our Boards section starts-->
+		<section id="our-board">
+			<br>
+			<div class="our-board-content">
+				<div class="heading">
+					<h4 class="hvr-underline-from-center">OUR LEADERS</h4>
+				</div>
+				<br><br>
+				
+				<!-- parent div conatining all board as flex childs -->
+				<!-- Board section for large devices  -->
+				<div class="hide-on-small-only">
+					<div class="row">
+						<div class="col m2 l2"></div>
+						<div class="col m4 l4 slick-childd wow fadeInLeft">
+							<div class="card ob-card " style="margin-left: auto !important;">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="" src="img/hrv.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title  hari">Hari Ram Vishwakarma<i class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Faculty coordinator</h6>
+									<p style="visibility: hidden;"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></p>
+								</div>
+						    	<!-- <div class="card-reveal"  activator activator>
+						   		 	<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						    		<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						    	</div> -->
+						    </div>
+						</div>
+						<div class="col m4 l4 slick-childd">
+							<div class="card ob-card ob-card-left wow fadeInRight" style="margin-right: auto;">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/abhitej.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator abhi">Abhitej Singh<i class="material-icons right">more_vert</i></span>
+
+									<h6 class="board-desg">President</h6>
+									<p><a href="https://www.facebook.com/Ash.nda22" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+									<a href="https://www.linkedin.com/in/abhitejsingh23/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title ">Abhitej Singh<i class="material-icons right">close</i></span>
+									<p>We have a great team at ACM VIT. Every year we help students sharpen their technical and management skills.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col m2 l2"></div>
+
+					</div>
+					<!-- actually new row -->
+					<div class="row">
+						<div class="col m4 l4 slick-childd wow fadeInLeft">
+							<div class="card ob-card ob-card-left">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/hardika.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator hardi">Hardika Goyal<i class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Managing Director</h6>
+									<p><a href="https://www.facebook.com/hardika.goyal" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+									<a href="https://www.linkedin.com/in/hardika-goyal/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title ">Hardika Goyal<i class="material-icons right">close</i></span>
+
+									<p>I credit this association with ACM for nurturing my technical and management skills. It has become an indispensable part of my college life.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col m4 l4 slick-childd">
+							<div class="card ob-card ob-card-center wow fadeInUp">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/sourish.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator souri">Sourish Banerjee<i 	class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Technical Director</h6>
+									<p>
+										<a href="https://www.facebook.com/ban.sourish" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.facebook.com/ban.sourish" target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/sourish-banerjee/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title">Sourish Banerjee<i class="material-icons right">close</i></span>
+									<p>ACM VIT has been quite an experience! I’ve got a great team and they’ve helped me learn so many things.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col m4 l4 slick-childd wow fadeInRight">
+
+							<div class="card ob-card ">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/harshit.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator  harsh">Harshit Kedia<i class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Associate Technical Director</h6>
+									<p>
+										<a href="https://www.facebook.com/hkedia32" target="_blank"  class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.github.com/hkedia321"  target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/harshit-kedia-7abb7b108/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title">Harshit Kedia<i class="material-icons right">close</i></span>
+									<p>If you aren't building something, you aren't an engineer.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- newe row wend -->
+					<!-- Third row starts -->
+					<div class="row">
+						<div class="col m4 l4 slick-childd wow fadeInLeft">
+							<div class="card ob-card ob-card-left">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/yash.jpg" style="width: 150px;">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator yass">Yash shah<i class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Research and ICPC Head</h6>
+									<p>
+										<a href="https://www.facebook.com/Yash.2h2o" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.github.com/zacker-22" target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/yash-shah-0bb591142/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title ">Yash Shah<i class="material-icons right">close</i></span>
+
+									<p>I believe in learning new things everyday and keep myself updated with the latest trends in technology.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col m4 l4 slick-childd wow fadeInUp">
+							<div class="card ob-card ob-card-center">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/vinit.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator vini">Vinit Bodhwani<i 	class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Associate Research Lead</h6>
+									<p>
+										<a href="https://www.facebook.com/profile.php?id=100009652089796" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.github.com/bodhwani" target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/vinit-bodhwani-1916a7112/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title">Vinit Bodhwani<i class="material-icons right">close</i></span>
+									<p>Just know within yourself, that's enough!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col m4 l4 slick-childd wow fadeInRight">
+
+							<div class="card ob-card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/shivam.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator shiv">Shivam Chawla<i class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Public Relations</h6>
+									<p>
+										<a href="https://www.facebook.com/shivamchawla60" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.github.com/Shivam60" target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/shivam-chawla-39759b11a/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title">Shivam Chawla<i class="material-icons right">close</i></span>
+									<p> Coding is my tea and i am a ML Enthusiasts. I like to solve real life problems.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- third new row end-->
+					<!--fourth new row -->
+					<div class="row">
+						<div class="col m4 l4 slick-childd wow fadeInLeft">
+							<div class="card ob-card ob-card-left">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/rishabh.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator rishi">Rishabh Jain<i class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Operations Head</h6>
+									<p><a href="https://www.facebook.com/rishabhjain22sep" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+										<!-- <a href="" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a> -->
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title">Rishabh Jain<i class="material-icons right">close</i></span>
+									<p>I joined ACM-VIT in the first year of college as a core committee member. Its been a learning experience ever since, meeting the best technical minds of the college.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col m4 l4 slick-childd">
+							<div class="card ob-card ob-card-center wow fadeInUp">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/anmol.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator anmo">Anmol Srivastava<i 	class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Public Relations</h6>
+									<p><a href="https://www.facebook.com/anmolsrivastava05" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/anmol-srivastava-a99115135/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title">Anmol Srivastava<i class="material-icons right">close</i></span>
+									<p> Working with ACM since 1 year and now the marketing lead at ACM-VIT Chapter.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col m4 l4 slick-childd wow fadeInRight">
+
+							<div class="card ob-card ">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/vibhore.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator vibho">Vibhore Gupta<i class="material-icons right">more_vert</i></span>
+									<h6 class="board-desg">Finance Head</h6>
+									<p><a href="https://www.facebook.com/vibhore.gupta.18" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/vibhore-gupta-6b7810104/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title ">Vibhore Gupta<i class="material-icons right">close</i></span>
+									<p>There is no business without analyst and no analyst without data. The whole world is full of data and unknowingly, you are an analyst.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- next new row end-->
+
+				</div>
+				<!-- board section for large devices end here -->
+
+				<!-- ///////////////////////////////// -->
+				<!-- for mobile to display slicj -->
+				<div class="hide-on-med-and-up show-on-small-only your-class board-for-mobile">
+					<div class="col m4 l4 slick-childd">
+						<div class="card ob-card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="" src="img/hrv.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title hari">Hari Ram Vishwakarma<i 	class="material-icons right">more_vert</i></span>
+								<span class="board-desg">Faculty coordinator</span>
+								<p style="visibility: hidden;"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></p>
+							</div>
+					    	<!-- <div class="card-reveal"  activator activator>
+					   		 	<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					    		<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    	</div> -->
+					    </div>
+					</div>
+					<div class="col m4 l4 slick-childd">
+						<div class="card ob-card ob-card-left" style="margin-right: auto;">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/abhitej.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator abhi">Abhitej Singh<i class="material-icons right">more_vert</i></span>
+								<!-- <span>&nbsp;</span> -->
+								<h6 class="board-desg">President</h6>
+								<p><a href="https://www.facebook.com/Ash.nda22" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+									<a href="https://www.linkedin.com/in/abhitejsingh23/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title ">Abhitej Singh<i class="material-icons right">close</i></span>
+								<p>We have a great team at ACM VIT. Every year we help students sharpen their technical and management skills.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- actually new row -->
+					<div class="col m4 l4 slick-childd">
+						<div class="card ob-card ob-card-left">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/hardika.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator hardi">Hardika Goyal<i class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Managing Director</h6>
+								<p><a href="https://www.facebook.com/hardika.goyal" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>
+								&nbsp;&nbsp;
+									<a href="https://www.linkedin.com/in/hardika-goyal/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">Hardika Goyal<i class="material-icons right">close</i></span>
+								<p>I credit this association with ACM for nurturing my technical and management skills. It has become an indispensable part of my college life.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col m4 l4 slick-childd">
+						<div class="card ob-card ob-card-center">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/sourish.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator souri">Sourish Banerjee<i 	class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Technical Director</h6>
+								<p><a href="https://www.facebook.com/ban.sourish"  target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+								<a href="https://www.facebook.com/ban.sourish" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a></p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">Sourish Banerjee<i class="material-icons right">close</i></span>
+								<p>ACM VIT has been quite an experience! I’ve got a great team and they’ve helped me learn so many things.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col m4 l4 slick-childd">
+
+						<div class="card ob-card ">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/harshit.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator harsh">Harshit Kedia<i class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Associate Technical Director</h6>
+								<p>
+									<a href="https://www.facebook.com/hkedia32" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>
+									<a href="http://github.com/hkedia32" target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/harshit-kedia-7abb7b108/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">Harshit Kedia<i class="material-icons right">close</i></span>
+								<p>If you aren't building something, you aren't an engineer.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- newe row wend -->
+					<!--Third new row -->
+					<div class="col m4 l4 slick-childd">
+
+						<div class="card ob-card ob-card-left">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/yash.jpg" style="width: 140px;">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator yass">Yash Shah<i class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Research and ICPC Head</h6>
+								<p>
+									<a href="https://www.facebook.com/Yash.2h2o" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+									<a href="https://www.github.com/zacker-22" target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/yash-shah-0bb591142/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">Yash Shah<i class="material-icons right">close</i></span>
+								<p>I believe in learning new things everyday and keep myself updated with the latest trends in technology.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col m4 l4 slick-childd">
+						<div class="card ob-card ob-card-center">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/vinit.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator vini">Vinit Bodhwani<i 	class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Associate Research Lead</h6>
+								<p>
+									<a href="https://www.facebook.com/profile.php?id=100009652089796" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>
+									<a href="https://www.github.com/bodhwani" target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/vinit-bodhwani-1916a7112/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title">Vinit Bodhwani<i class="material-icons right">close</i></span>
+								<p>Just know within yourself, that's enough!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col m4 l4 slick-childd">
+
+						<div class="card ob-card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/shivam.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator shiv">Shivam Chawla<i class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Public Relations</h6>
+								<p>
+									<a href="https://www.facebook.com/shivamchawla60" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+									<a href="https://www.github.com/Shivam60" target="_blank" class="board-git"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/shivam-chawla-39759b11a/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title ">Shivam Chawla<i class="material-icons right">close</i></span>
+								<p> Coding is my tea and i am a ML Enthusiasts. I like to solve real life problems.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- third new row end-->
+					<!--fourth new row -->
+					<div class="col m4 l4 slick-childd">
+						<div class="card ob-card ob-card-left">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/rishabh.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator rishi">Rishabh Jain<i class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Operations Head</h6>
+								<p><a href="https://www.facebook.com/rishabhjain22sep" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a></p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title ">Rishabh Jain<i class="material-icons right">close</i></span>
+								<p>I joined ACM-VIT in the first year of college as a core committee member. Its been a learning experience ever since, meeting the best technical minds of the college.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col m4 l4 slick-childd">
+						<div class="card ob-card ob-card-center">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/anmol.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator anmo">Anmol Srivastava<i 	class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Public Relations</h6>
+								<p>
+									<a href="https://www.facebook.com/anmolsrivastava05" target="_blank" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+									<a href="https://www.linkedin.com/in/anmol-srivastava-a99115135/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title ">Anmol Srivastava<i class="material-icons right">close</i></span>
+								<p> Working with ACM since 1 year and now the marketing lead at ACM-VIT Chapter.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col m4 l4 slick-childd">
+
+						<div class="card ob-card ">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/vibhore.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator vibho">Vibhore Gupta<i class="material-icons right">more_vert</i></span>
+								<h6 class="board-desg">Finance Head</h6>
+								<p><a href="https://www.facebook.com/vibhore.gupta.18" class="board-fb"><i class="fa fa-facebook fa-2x"></i></a>
+								&nbsp;&nbsp;
+										<a href="https://www.linkedin.com/in/vibhore-gupta-6b7810104/" target="_blank" class="board-linke"><i class="fa fa-linkedin fa-2x"></i></a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title ">Vibhore Gupta<i class="material-icons right">close</i></span>
+								<p>There is no business without analyst and no analyst without data. The whole world is full of data and unknowingly, you are an analyst.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- next new row end-->
+				</div>
+				<!-- slick demo enf =-->
+				<!-- /////////////////////////// -->
+				<br><br>
+			</div>
+		</section>
+		<!-- Our Boards section ends here -->
+
+		<!-- Our events section starts-->
+		<!-- .events-content -->
+
+		
+		
+		<!-- contact-us section starts here -->
+		<section id="contact-us">
+			<!-- <br>
+			<div class="contact-us-content">
+				<div class="heading">
+					<h4>CONTACT US</h4>
+				</div>
+				<br><br>
+			</div> -->
+			<div class="cu-head wow fadeInUp">
+				<h3 class="hvr-underline-from-center">CONTACT US</h3>
+				<p class="remove-margin-top">Got any queries? Just leave your details below along with whatever you want to ask.</p>
+			</div>
+
+			<div class="cu-main ">
+				<div class="row" id="cu-row ">
+					<div class="col show-on-small-only hide-on-med-and-up s12">
+						<img src="img/contact.png" class="responsive-img cu-main-img" alt="Contact Us">
+					</div>
+					<div class="col m6 s12 wow fadeInLeft">
+						<div id="cu-form-wrapper">
+							<div class="cu-horizontal-form">
+								<!-- <div class="row">
+									<div class="col s9">
+									</div>
+									<div class="col s3">
+									<br><br>
+									<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+									<br><br>
+									<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+									</div>
+								</div> -->
+								<button class="btn-floating btn-large waves-effect waves-light red" id="sub-btn" onclick="sendMsg()"><i class="material-icons">send</i></button>
+							</div>
+
+							<!-- horizontal part end -->
+							<!-- now verticala form -->
+							<div class="cu-vertical-form">
+								<div class="blue-section">
+									<p>Connect with us</p>
+								</div>
+								<div id="cu-form" class="z-depth-1">
+									<div class="row">
+										<div class="col s10">
+											<div class="input-field">
+												<input id="name" type="text" class="validate" name="name" required>
+												<label for="name">Name</label>
+											</div>
+											<div class="input-field">
+												<input id="email" type="text" class="validate" name="email" required>
+												<label for="email">Email</label>
+											</div>
+											<div class="input-field">
+												<textarea id="message" class="materialize-textarea" name="message" required></textarea>
+												<label for="message">Textarea</label>
+											</div>
+											<br>
+										</div>
+										<div class="col s2">
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<!-- verical form end -->
+						</div>
+					</div>
+					<div class="col hide-on-small-only show-on-med-and-up m6 wow fadeInRight">
+						<img src="img/contact.png" class="responsive-img cu-main-img" alt="Contact Us">
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- contact-us section ends here -->
+
+	<!-- footer section starts -->
+	<!-- check footer style in common3.css -->
+	<div id="our-footer">
+		<footer>
+			<div class="footer-wrapper #212121 grey darken-3">
+				<div class="row">
+					<div class="col s12 m6">
+						<p style="color: #e2e2e2">Reach us at:</p>
+						<div class="social-links">
+							<a href="https://www.instagram.com/acmvitu/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram" target="_blank"><img src="img/insta.png" alt="ACM VIT"></a>
+
+							<a href="https://www.facebook.com/ACM.VITU/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook" target="_blank"><img src="img/fb.png" alt="ACM VIT" ></a>
+
+							<a href="mailto:outreachvit@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="E-mail" target="_blank"><img src="img/mail.png" alt="ACM VIT"></a>
+
+							<a href="https://twitter.com/ACM_VIT" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" target="_blank"><img src="img/tw.png" alt="ACM VIT"></a>
+
+							<a href="" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Phone"><img src="img/call.png" alt="ACM VIT"></a>
+						</div>
+					</div>
+					<div class="col s12 m6 footer-links">
+						<p style="color: #e2e2e2">Links : </p>
+						<div class="row">
+							<div class="col s4">
+									<!-- <ul>
+										<li>Home</li>
+										<li>Blog</li>
+									</ul> -->
+							</div>
+							<div class="col s4 show-on-small-only hide-on-med-and-up">
+								<ul>
+									<li><a href="#our-events" target="_blank">Events</a></li>
+									<li><a target="_blank" href="http://blog.acmvit.in" target="_blank">Blog</a></li>
+									<li><a target="_blank" href="/projects" target="_blank">Projects</a></li>
+									<li><a target="_blank" href="https://www.youtube.com/channel/UCaV36jEoK5SI59ly0Mxa_ZA">You Tube</a></li>
+								</ul>
+							</div>
+							<div class="col s4 hide-on-small-only sho">
+									
+								<ul>
+									<li><a href="#">Events</a></li>
+									<li><a target="_blank" href="http://blog.acmvit.in">Blog</a></li>
+									<li><a target="_blank" href="/projects">Projects</a></li>
+									<li><a target="_blank" href="https://www.youtube.com/channel/UCaV36jEoK5SI59ly0Mxa_ZA">You Tube</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- first row ends here.. -->
+					<!-- second row containing acm and vit image -->
+					<div class="row">
+						<div class="col s12 m6">
+							<div class="footer-acm">
+								<img src="img/acmint.png" alt="ACM">
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<div class="footer-vit">
+								<img src="img/vitwhite.png" alt="VIT">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- footer section ends -->
+
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/events.js"></script>
+	<script type="text/javascript">
+		
+
+		function sendMsg(e){
+			// e.preventDefault();
+			console.log("Inside send message");
+			var name  = $('#name');
+			var email = $('#email');
+			var msg   = $('#message');
+			if (name.length <=0 || email.length <=0 || msg.length<=0){
+				alert("Please fill in all the Details");
+			}
+			// parameters: service_id, template_id, template_parameters
+			emailjs.send("gmail","template_9tqfVEAj",{name: name, email: email, msg: msg})
+			.then(function(response) {
+			   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+			}, function(err) {
+			   console.log("FAILED. error=", err);
+			});
+		}
+		$slick_slider = $('.your-class');
+		settings = {
+			dots: true,
+			mobileFirst: true,
+			infinite: true,
+			fade: true,
+			cssEase: 'linear',
+			arrows : true
+		}
+
+		$(window).on('resize', function() {
+			if($(window).width() > 700)
+			{
+				if($slick_slider.hasClass('slick-initialized')){
+					$slick_slider.slick('unslick');
+				}
+
+
+			}
+			else
+			{
+				if(!$slick_slider.hasClass('slick-initialized')) {
+					$slick_slider.slick(settings);
+				}
+			}
+		});
+		if($(window).width()<700)
+		{
+			$slick_slider.slick(settings);
+		}
+		$(document).ready(function(){
+			$('.materialboxed').materialbox();
+		});
+	</script>
+
+
+</body>
+</html>

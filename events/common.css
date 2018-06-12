@@ -1,0 +1,102 @@
+/*
+ color: #1e88e5;
+*/
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+nav{
+	background-color: #1e88e5;
+}
+.main-content{
+	background-image: url('img/backwhite.svg');
+	width: 97%;
+	margin-left: auto;
+}
+.main-content .row{
+	margin-bottom: 0;
+}
+.brand-logo img{
+	width: 120px;
+}
+.img-content{
+	background: #212121;
+	display: flex;
+	/*align-items: center;*/
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+.event-name-and-logo{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: #fff;
+	width: 98%;
+	margin: auto;
+}
+.event-logo img{
+	width: 200px;
+}
+.event-name{
+	background: #1e88e5;
+	padding: 12px;
+	color: #fff;
+	font-size: 26px;
+}
+.make-card{
+	padding: 15px;
+	text-align: justify;
+	background: #fff;
+	color: #424242;
+}
+.small-cards{
+	/*padding: 12px;*/
+	text-align: center;
+	margin-bottom: 19px;
+	color: #1e88e5;
+	background: #fff;
+	height: 50px;
+	
+	/*line-height: 3;*/
+}
+.btn:hover{
+	background: #fff;
+}
+.dropdown-content li{
+	text-align: center;
+}
+.small-cards-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: normal;
+}
+@media only screen and (max-width: 600px){
+	.small-cards-div{
+		margin-top: 20px;
+	}
+}
+.btn:focus{
+	background: #fff;
+}
+/*footer style*/
+.footer-wrapper{
+	background: #212121;
+	text-align: center;
+	color: #fff;
+}
+.footer-wrapper .row{
+	margin-bottom: 0;
+}
+.footer-vit, .footer-acm{
+	width: 280px;
+}
+/*.footer-vit{
+	position: relative;
+	bottom: 30px;
+}*/

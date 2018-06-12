@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="Language" content="en" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ACM-VIT Projects</title>
+    <meta name="description" content="ACM-VIT is the most dedicated one when it comes to technical projects. We are ready to solve any problems in best possible technical way." />
+    <meta name="keywords" content="ACM-VIT, saurav kumar bhagat, saurav bhagat,Akhsit grover, ACM recruitments,harshit kedia, ACM">
+    <meta name="author" content="Saurav Bhagat">
+    <meta name="viewport" content="width=device-width, initial-scale=1 max-scale=1">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ACM-VIT Projects" />
+    <meta property="og:url" content="www.acm-projects.surge.sh" />
+    <meta property="og:title" content="ACM-VIT Project" />
+    <meta property="og:description" content="ACM-VIT Projects.Our technical and research team is highly dedicated towards doing projects and making tools which solve real world problems." />
+    <meta property="og:image" content="http://acm-vit.surge.sh/img/logo.png" />
+    <meta itemprop="name" content="ACM-VIT Project page" />
+    <meta itemprop="description" content="ACM-VIT Projects.Our technical and research team is highly dedicated towards doing projects and making tools which solve real world problems." />
+    <meta itemprop="image" content="img/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    .nav-wrapper .active{
+        color: blue !important;
+    }
+    .card .card-content{
+        min-height: 180px;
+    }
+    #nav_home:hover{
+        color: white;
+    }
+    .increase_width{
+        width: 160px;
+    }
+    @media screen and (min-width: 540px) {
+        .increase_width {
+            width: 190px;
+        }
+    }
+    @media only screen and (min-width: 700px) {
+        #headtext {
+            vertical-align: text-bottom;
+        }
+        #headimage{
+            width: 100px;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        #headtext {
+            vertical-align: text-bottom;
+        }
+        #headimage{
+            width: 50px;
+        }
+    }
+    #addsign{
+      position: relative;
+      bottom: 14px;
+      margin-right: 3px;
+    }
+    #projectsubmitbutton{
+      padding-left: 3px;
+      padding-right: 10px;
+      background: blue;
+    }
+    nav{
+        box-shadow: none;
+        background-color: #424242;
+    }
+    </style>
+
+  </head>
+  <body>
+
+
+    <!-- navbar section-->
+    <div class="navbar-fixed">
+        <nav id="startchange">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left-align">
+                    <img src="img/acm.png" class="responsive-img hide-on-small-only" id="headimage" >
+                </a>
+
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- <li class=""><a href="#" id="nav_home"><strong>HOME</strong></a></li> -->
+                    <li><a href="#techone" style="font-size:18px; color: white;"><strong>Technical</strong></a></li>
+                    <!-- <li><a href="#researchone" style="font-size:18px; color: white;"><strong>Research</strong></a></li> -->
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <!-- <li><a href="index.html">Home</a></li> -->
+                    <li><a href="#techone" style="font-size:18px;"><strong>Technical</strong></a></li>
+                    <!-- <li><a href="#researchone" style="font-size:18px;"><strong>Research</strong></a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar section end -->
+    <!-- modal structure for form -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <p> Got an Idea ? Having difficulty implementing it? </p>
+        <p> Submit your Idea to ACM-VIT and get what it takes to make it happen. </p>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="project_title" type="text" class="validate" required>
+                <label for="project_title">Project Title</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea" required></textarea>
+                <label for="textarea1">Project Description</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                  <input id="email" type="email" class="validate" required>
+                  <label for="email">Email</label>
+                </div>
+              </div>
+
+        <div class="modal-footer">
+          <input type="submit" class="modal-action waves-effect waves-blue btn-flat" style="background-color:blue;color:white;" value="Submit">
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- technical heading-->
+    <div class="section #424242 grey darken-3"  id="techone" style="color: white;">
+        <div style="padding-left: 20px;">
+            <h5>TECHNICAL PROJECTS</h5>
+            <p>Check out our past and ongoing projects below. The Technical team is determined and dedicated to provide the community with best work to their capability. </p>
+        </div>
+    </div>
+    <!-- technical heading end -->
+
+    <!-- Technical projects section -->
+    <div id="techprojects">
+    <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col m4 s12">
+                <!-- so this is the project card which is going to repeat -->
+
+                    <a href="biomet.html" style="color: black;">
+                    <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                         <div class="row imageshowincard">
+                            <div class="col s6">
+                                <h5>Biomet 2018</h5>
+                            </div>
+                            <div class="col s6">
+                                <img class="responsive-img" src="img/biomet_logo.png">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>BioMET is VIT's International conference on Bio Technologies. We build and manage their website.</p>
+                        </div>
+                        <div class="card-action">
+                            <p class="viewproject">View Project</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col m4 s12">
+
+                    <a href="pravega.html" style="color: black;">
+                    <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                        <div class=" row imageshowincard">
+                            <div class="col s6">
+                                <h5>Pravega Website</h5>
+                            </div>
+                            <div class="col s6">
+                                <img class="responsive-img" src="img/pravega.png">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Pravega Racing is the official SAE Racing Team of VIT University. Our Technical Team build their complete website and an admin portal for their internal team management.</p>
+                        </div>
+                        <div class="card-action">
+                            <p class="viewproject">View Project</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col m4 s12">
+
+                    <a href="c2cwebportal.html" style="color: black;">
+                      <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                           <div class="row imageshowincard">
+                              <div class="col s6">
+                                  <h5>C2C web Portal</h5>
+                              </div>
+                              <div class="col s6">
+                                  <img class="responsive-img" src="img/c2c.png">
+                              </div>
+                          </div>
+                          <div class="card-content">
+                              <p>Code2Create is a Hackathon organised by ACM VIT. It is all about designing, building and creating. </p>
+                          </div>
+                          <div class="card-action">
+                              <p class="viewproject">View Project</p>
+                          </div>
+                      </div>
+                      </a>
+                </div>
+            </div><!-- end of first row -->
+            <!-- second row starting -->
+            <div class="row" style="margin-bottom: 0;">
+                <div class="col m4 s12">
+
+                    <a href="jaabaz.html" style="color: black;">
+                    <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                         <div class="row imageshowincard">
+                            <div class="col s6">
+                                <h5>Jaabaz Website</h5>
+                            </div>
+                            <div class="col s6">
+                                <img class="responsive-img" src="img/jaabaz.jpg">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Team Jaabaz manufactures All-Terrain vehicles represents VIT University in BAJA SAE event every year. Our Technical Team build their official website. </p>
+                        </div>
+                        <div class="card-action">
+                            <p class="viewproject">View Project</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col m4 s12">
+
+                    <a href="kiracing.html" style="color: black;">
+                        <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                             <div class="row imageshowincard">
+                                <div class="col s6">
+                                    <h5>KI racing</h5>
+                                </div>
+                                <div class="col s6">
+                                    <img class="responsive-img" src="img/ki.png">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>KI Racing is a BAJA SAE team based in VIT University, Vellore. Our Technical Team build their official website.</p>
+                            </div>
+                            <div class="card-action">
+                                <p class="viewproject">View Project</p>
+                            </div>
+                        </div>
+                        </a>
+                </div>
+                <div class="col m4 s12">
+
+                    <a href="cabshare.html" style="color: black;">
+                    <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                         <div class="row imageshowincard">
+                            <div class="col s6">
+                                <h5>VIT Cab Share</h5>
+                            </div>
+                            <div class="col s6">
+                                <img class="responsive-img" src="img/cabshare.png">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                            <p>VIT Cab Share eases the process of cab sharing for people travelling to chennai or bangalore airport from VIT. It has helped hundreds of people to find co travellers.</p>
+                        </div>
+                        <div class="card-action" >
+                            <p class="viewproject">View Project</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div><!-- end of second row -->
+            <!-- Third row starting -->
+            <div class="row" style="margin-bottom: 0;">
+                <div class="col m4 s12">
+                <!-- so this is the project card which is going to repeat -->
+                <a href="allaboutvit.html" style="color: black;">
+                <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                     <div class="row imageshowincard">
+                        <div class="col s6">
+                            <h5>All About VIT</h5>
+                        </div>
+                        <div class="col s6">
+                            <img class="responsive-img" src="img/vit_logo.jpg">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>All About VIT helps the students to get relevant information about the college, and clear their common doubts.</p>
+                    </div>
+                    <div class="card-action">
+                        <p class="viewproject">View Project</p>
+                    </div>
+                </div>
+                </a>
+
+                </div>
+                <div class="col m4 s12">
+                    <a href="tuj.html" style="color: black;">
+                    <div class="card animated fadeIn" style="border-bottom: 10px solid #1e88e5;">
+                        <div class=" row imageshowincard">
+                            <div class="col s6">
+                                <h5>Team Uttejit</h5>
+                            </div>
+                            <div class="col s6">
+                                <img class="responsive-img" src="img/tuj.JPG">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Team Uttejit is a formula student team of VIT which builds formula cars. ACM VIT built the website for this team.</p>
+                        </div>
+                        <div class="card-action" >
+                            <p class="viewproject">View Project</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col m4 s12">
+                        <a href="c2candroid.html" style="color: black;">
+                        <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                            <div class=" row imageshowincard">
+                                <div class="col s6">
+                                    <h5>C2c Android App</h5>
+                                </div>
+                                <div class="col s6">
+                                    <img class="responsive-img" src="img/c2c.png">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>The android app for Code2Create enabled the participants to give a quiz. The App became widely popular.</p>
+                            </div>
+                            <div class="card-action">
+                                <p class="viewproject">View Project</p>
+                            </div>
+                        </div>
+                        </a>
+                </div>
+            </div><!-- end of Third  row -->
+
+            <!-- Fourth Row -->
+            <div class="row" style="margin-bottom: 0;">
+                <div class="col m4 s12">
+                <!-- so this is the project card which is going to repeat -->
+                <a href="falcons.html" style="color: black;">
+                <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                     <div class="row imageshowincard">
+                        <div class="col s6">
+                            <h5>Team Asailing Falcons</h5>
+                        </div>
+                        <div class="col s6">
+                            <img class="responsive-img" src="img/falcons.jpg">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Team Asailing Falcons is an aeromodelling team of VIT. ACM VIT built the website for this team.</p>
+                    </div>
+                    <div class="card-action">
+                        <p class="viewproject">View Project</p>
+                    </div>
+                </div>
+                </a>
+
+                </div>
+                <div class="col m4 s12">
+                    <a href="codart.html" style="color: black;">
+                    <div class="card animated fadeIn" style="border-bottom: 10px solid #1e88e5;">
+                        <div class=" row imageshowincard">
+                            <div class="col s6">
+                                <h5>Codart</h5>
+                            </div>
+                            <div class="col s6">
+                                <img class="responsive-img" src="img/codartlogo.png">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Codart is one of ACM's most popular events which is a perfect amalgamation of adequate amounts of coding and fun. It is basically a codeathon the web app for which was built by Team ACM VIT</p>
+                        </div>
+                        <div class="card-action" >
+                            <p class="viewproject">View Project</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col m4 s12">
+                        <a href="rc.html" style="color: black;">
+                        <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                            <div class=" row imageshowincard">
+                                <div class="col s6">
+                                    <h5>Reverse Coding</h5>
+                                </div>
+                                <div class="col s6">
+                                    <img class="responsive-img" src="img/rc.png">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>ACM VIT conducted the event reverse coding with a concept similar to reverse engineering, because coding when you have a question is too mainstream.</p>
+                            </div>
+                            <div class="card-action">
+                                <p class="viewproject">View Project</p>
+                            </div>
+                        </div>
+                        </a>
+                </div>
+            </div><!-- end of fourth  row -->
+
+            <!-- Fifth Row -->
+            <div class="row" style="margin-bottom: 0;">
+                <div class="col m4 s12">
+                    <a href="c2cios.html" style="color: black;">
+                        <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                            <div class=" row imageshowincard">
+                                <div class="col s6">
+                                    <h5>C2C IOS App</h5>
+                                </div>
+                                <div class="col s6">
+                                    <img class="responsive-img" src="img/c2c.png">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>The IOS app for Code2Create enabled the participants to give the complete workflow. The App became widely popular.</p>
+                            </div>
+                            <div class="card-action">
+                                <p class="viewproject">View Project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col m4 s12">
+                    <a href="headscratcher.html" style="color: black;">
+                    <div class="card animated fadeIn" style="border-bottom: 10px solid #1e88e5;">
+                        <div class=" row imageshowincard">
+                            <div class="col s6">
+                                <h5>Head Scratcher</h5>
+                            </div>
+                            <div class="col s6">
+                                <img class="responsive-img" src="img/bweb.jpg">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Based on the big web quiz developed by google the famous quiz platform revealed at GDD India, the Team of ACM VIT developed its own platform for big web quiz and named it head scratcher.</p>
+                        </div>
+                        <div class="card-action" >
+                            <p class="viewproject">View Project</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col m4 s12">
+                        <a href="chatbot.html" style="color: black;">
+                        <div class="card" style="border-bottom: 10px solid #1e88e5;">
+                            <div class=" row imageshowincard">
+                                <div class="col s6">
+                                    <h5>Chatter BOT</h5>
+                                </div>
+                                <div class="col s6">
+                                    <!-- <img class="responsive-img" src="img/aiche.png"> -->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>Chat bot for communicating with topics related to ACM.</p>
+                            </div>
+                            <div class="card-action">
+                                <p class="viewproject">View Project</p>
+                            </div>
+                        </div>
+                        </a>
+                </div>
+            </div><!-- end of fifth  row -->
+        </div><br><br>
+    </div>
+
+    <!-- Technical project section ends- -->
+    <!-- Research Heading-->
+    
+    <!-- Research project section ends- -->
+
+
+
+
+    <!-- footer wrapper -->
+        <footer>
+            <div class="footer-wrapper">
+                <br>
+                <div class="row">
+                    <div class="col m4 s12">
+                        <a href="http://acmvit.in" target="_blank"><img src="img/acmint.png" alt="VIT" class="footer-acm"></a>
+                    </div>
+                    <div class="col m4 s12">
+                        <p>Follow us at:</p>
+                        <div class="social-icons">
+                            <a href="#" target="_blank">
+                                <img src="img/mail.png" alt="Email" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="img/call.png" alt="call" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Contact">
+                            </a>
+                            <a href="https://www.instagram.com/acmvitu/?hl=en" target="_blank">
+                                <img src="img/insta.png" alt="Instagram" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram">
+                            </a>
+                            <a href="https://www.facebook.com/ACM.VITU/" target="_blank">
+                                <img src="img/fb.png" alt="Facebook" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook">
+                            </a>
+                            <a href="https://twitter.com/ACM_VIT" target="_blank">
+                                <img src="img/tw.png" alt="Twitter" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col m4 s12">
+                        <a href="http://vit.ac.in" target="_blank"><img src="img/vitwhite.png" alt="VIT" class="footer-vit"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Footer section ends -->
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){       
+           // var scroll_start = 0;
+           // var startchange = $('#startchange');
+           // var offset = startchange.offset();
+           // $(document).scroll(function() { 
+           //    scroll_start = $(this).scrollTop();
+           //    if(scroll_start > offset.top) {
+           //        $('#navbar').css('background-color', '#3A90F9');
+           //     } else {
+           //        $('#navbar').css('background-color', 'transparent');
+           //     }
+           // });
+           $(window).scroll(function(){
+                if($(document).scrollTop() >20 ){
+                    console.log("hai aa rha ");
+                     $('nav').css({"background-color": "#1e88e5"});
+                } else {
+                     console.log("saurav inside nav");
+                $('nav').css({"background-color": "#424242"});
+                }
+             });
+        });
+    </script>
+    <script type="text/javascript">
+            $(".button-collapse").sideNav();
+            $('.card').addClass('z-depth-5','animated');
+            $(function(){
+                $('.card').addClass('animated','bounce');
+                $('.card').addClass('fadeInRight');
+            });
+            $(document).ready(function(){
+              $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+      $(document).ready(function(){
+        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+      });
+    </script>
+  </body>
+</html>
